@@ -1,14 +1,14 @@
-
-function fastLog(text) {
-    console.log(text);
-    return 'muhaha';
-}
-
-function buttonClicked(event) {
+/* function buttonClicked(event) {
     console.log(event.target);
     event.target.classList.toggle('clicked');
+    document.getElementById('nav').classList.toggle('clicked');
 
-    console.log(fastLog('ezt szeretnenk loggolni'))
+} */
+
+function buttonClicked(event) {
+    // event.target.classList.toggle('clicked');
+    document.getElementById('body').classList.toggle('clicked');
+
 }
 
 function loadEvent() {
@@ -19,5 +19,3 @@ function loadEvent() {
 }
 
 window.addEventListener("load", loadEvent);
-
-console.log(document.getElementById('menu-btn'))
